@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaoshu.dao.YuangongMapper">
+  	<select id="findList" parameterType="YuangongVo" resultType="YuangongVo">
+  	select y.*,b.bname as bname from yuangong y,bumen b where y.bid=b.bid
+  	</select>
+</mapper>
